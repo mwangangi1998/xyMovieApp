@@ -5,7 +5,7 @@
             <h2 class="text-lg capitalize font-bold text-amber-200">popular movies</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-8">
                 <div class="mt-8">
-                    <a href="">
+                    <a href="{{ url('movie_show') }}">
                         <img src="{{ url('imgs/img1.jpg') }}" alt="" class="hover:opacity 0.75 transition ease-in-out duration-150 ">
                     </a>
                     <div class="caption mt-2 hover:text-gray-100 text-lg ">

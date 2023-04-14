@@ -8,3 +8,4 @@ Route::view('/', 'index');
 Route::view('/movies', 'pages.movies');
 Route::view('/tvshows', 'pages.tvshow');
 Route::view('/actors', 'pages.actors');
+Route::view('movie_show','include.movie');
