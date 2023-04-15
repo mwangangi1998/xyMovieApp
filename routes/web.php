@@ -1,11 +1,14 @@
 <?php
 
+use App\Http\Controllers\pagesController;
 use Illuminate\Support\Facades\Route;
 
 
 // landing page
-Route::view('/', 'index');
-Route::view('/movies', 'pages.movies');
-Route::view('/tvshows', 'pages.tvshow');
-Route::view('/actors', 'pages.actors');
-Route::view('movie_show','include.movie');
+Route::get('/', [pagesController::class,'index']);
+
+Route::get('/movies',[pagesController::class,'movies']);
+Route::get('/tvshows',[pagesController::class,'tvshows']);
+Route::get('/actors',[pagesController::class,'actors']);
+Route::get('/movie_show',[pagesController::class,'show']);
+
